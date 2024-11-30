@@ -45,20 +45,21 @@ static bool IsOperationValid(int number1, int number2, string operation)
 static long Calculate(int number1, int number2, string operation)
 {
     long result = 0;
+    long num1 = number1;
 
     switch (operation)
     {
         case "addition":
-            result = number1 + number2;
+            result = num1 + number2;
             break;
         case "subtraction":
-            result = number1 - number2;
+            result = num1 - number2;
             break;
         case "multiplication":
-            result = number1 * number2;
+            result = num1 * number2;
             break;
         case "division":
-            result = number1 / number2;
+            result = num1 / number2;
             break;
     }
 
